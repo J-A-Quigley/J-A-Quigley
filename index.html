@@ -14,19 +14,17 @@
 	<body>
 		<!--nav bar-->
 		<div class="Nav">
-			<object data="Icon.svg" width="45px" height="45px"> </object>
+			<img src="Icon.svg" width="45px" height="45px"/>
   				<!-- Navigation links (hidden by default) -->
-  				<div class="Links" id="Links">
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  			<img src="HamburgerIcon.svg" width="45px" height="45px" onclick="myFunction()"/>
+  		</div>
+  		<div class="TopBar">
+  			<div class="Links" id="Links">
     				<a href="#About">About</a>
     				<a href="#Portfolio">Portfolio</a>
     				<a href="#Contact">Contact</a>
-  				</div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  				 <object data="HamburgerIcon.svg" width="45px" height="45px"><a href="javascript:void(0);" class="icon" onclick="myFunction()"></a></object> 
-  		</div>
-  		<div class="TopBar">
-  			<object data="Icon.svg" width="45px" height="45px"> </object>
-  			<object data="HamburgerIcon.svg" width="45px" height="45px"> </object>
+  			</div>
   		</div>
 
   		<!--home page-->
@@ -90,10 +88,10 @@
 			<p>If I’m the guy you’ve been looking for let’s get into contact</p>
 		</div>
 		<div class="DropDown">
-			<p>Phone: 07804 615346</p>
-			<p>Email: jackquigley11@gmail.com</p>
-			<p>Location: Plymouth</p>
-			<p>LinkedIn: link to profile</p>
+			<details><summary>Phone</summary><p>07804 615346</p></details>
+			<details><summary>Email</summary><p>jackquigley11@gmail.com</p></details>
+			<details><summary>Location</summary><p>Plymouth, UK</p></details>
+			<details><summary>LinkedIn</summary><p>www.linkedin.com/in/jackaquigley</p></details>
 		</div>
 	</body>
 </html>

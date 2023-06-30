@@ -1,3 +1,4 @@
+											/*BACKGROUND COLOUR HAS HAD THE "b" removed*/
 											/* applies to everything */
 * {
 	margin: 0;
@@ -45,37 +46,49 @@ section h1 {
 /* Navigation Bar Needs to be redone*/
 .Nav {
   overflow: hidden;
-  background-color: #ff5277;
   position: relative;
-  /*remove when done*/
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem 1rem 1rem;
+  min-width: 100%;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
-.Nav #Links {
-  display: none;
-}
 
+
+.TopBar {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+}
 /* Style navigation menu links */
-.Nav .Links a {
+.TopBar #Links {
+	display: none;
+	margin: 0 auto;
+}
+.TopBar .Links {
+  flex-direction: column;
+  align-items: center;
+	text-align: center;
+}
+.TopBar .Links a {
   color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 /* Style the hamburger menu */
 
 
 /* Add a grey background color on mouse-over */
-.Nav a:hover {
-  background-color: #ff5277;
+.TopBar a:hover {
+  background-color: #1AA1DB;
   color: black;
 }
 
 /* Style the active link (or home/logo) */
 .Active {
-  background-color: #0d101b;
+  background-color: #1AA1DB;
   color: white;
   font-size: 2rem;
 }
@@ -92,10 +105,12 @@ rgb(107, 111, 152) blue gray #6b6f98
 }
 																						/*hero section*/
 .Hero {
-	background-color: dimgray;
+	ackground-color: dimgray;
 	min-width: 100%;
 	text-align: center;
 	font-size: 2rem;
+	padding: 0rem 1rem 1rem 1rem;
+
 }
 
 #Home {
@@ -103,9 +118,11 @@ rgb(107, 111, 152) blue gray #6b6f98
 }
 
 .Sub {
-	background-color: green;
+	ackground-color: green;
 	min-width: 100%;
 	text-align: center;
+  padding: 0rem 1rem 1rem 1rem;
+
 }
 
 .Buttons {
@@ -114,78 +131,118 @@ rgb(107, 111, 152) blue gray #6b6f98
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	background-color: yellow;
+	ackground-color: yellow;
 }
 
 .Buttons a {
 	color: ghostwhite;
 	text-decoration: none;
-	background-color: #ff5277;
+	background-color: #1AA1DB;
 	width: 75%;
 	max-width: 1000px;
+	padding: 1rem 1rem 1rem 1rem;
+	margin: 1rem 1rem 1rem 1rem;
+
+
 }
 
 																				/*About section*/
 .About {
-	background-color: blueviolet;
+	ackground-color: blueviolet;
 	text-align: center;
+	padding: 1rem 1rem 0rem 1rem;
 }
 
 .Info{
-	background-color: orange;
+	ackground-color: orange;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 1rem 1rem 1rem 1rem;
 }
 
 .Info p {
 	width: 75%;
+	padding: 1rem 0rem 0rem 0rem;
+
 }
 
 																			/*portfolio section*/
 .Portfolio {
-	background-color: darkred;
+	ackground-color: darkred;
 	text-align: center;
+	padding: 1rem 1rem 1rem 1rem;
 }
 .Tech {
-	background-color: purple;
+	ackground-color: purple;
 	text-align: center;
+	padding: 1rem 1rem 1rem 1rem;
 }
 .TechScroll {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+  padding: 1rem 1rem 1rem 1rem;
+  align-items: center;
 }
 .Create {
-	background-color: blue;
+	ackground-color: blue;
 	text-align: center;
+	padding: 1rem 1rem 1rem 1rem;
 }
 .CreateScroll {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .card {
 	flex: 0 0 auto;
+	padding: 0rem 1rem 0rem 1rem;
 }
 
 																/*Contact section*/
 .Contact {
-	background-color: crimson;
+	ackground-color: crimson;
 	text-align: center;
+	padding: 1rem 1rem 1rem 1rem;
 }
 .ContactSub {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 0rem 1rem 1rem 1rem;
 }
 .ContactSub p {
 	width: 75%;
 }
 .DropDown {
-	background-color: darkseagreen;
-	text-align: center;
+	ackground-color: darkseagreen;
+	text-align: left;
+	padding: 0rem 1rem 1rem 1rem
+}
+.DropDown details{
+	ackground-color: darkseagreen;
+	text-align: left;
+	margin: 1rem 1rem 1rem 1rem;		
+	font-size: 1.5rem;
+  background-color: #1AA1DB;
+}
+.DropDown summary{
+	ackground-color: darkseagreen;
+	text-align: left;
+	margin: 0rem 1rem 0rem 1rem;		
+	font-size: 1.5rem;
+  background-color: #1AA1DB;
+}
+.DropDown p{
+	ackground-color: darkseagreen;
+	text-align: left;
+	margin: 0rem 1rem 1rem 1rem;	
+	padding: 1rem 1rem 1rem 1rem;		
+	font-size: 1rem;
+  background-color: #1AA1DB;
 }
