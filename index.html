@@ -2,101 +2,99 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Jack Quigley Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="Portfolio.css">
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
 		<style>
 		</style>
 		<script type="text/javascript" src="Portfolio.js"></script>
 	</head>
 
 	<body>
-		<!-- scroll sections -->
-		<div class="Container">
-			<!--Header-->
-			<section class="S1">
-				<header>
-					<h1>Jack Quigley</h1>
-				</header>
-				<div class="Buttonbox">
-					<a href="#">Download CV</a>
-					<a href="#">Let's Get In Touch</a>
-				</div>
-			</section>
-			<!--about-->
-			<section class="S2">
-				<div class="AP">
-					<div class="AC1">
-						<h1>About</h1>
-					</div>
-					<div class="AC2">
-						<p>who i am</p>
-						<p>what i'm doing</p>
-						<p>long term and short term goals</p>
-						<p>I’m a highly motivated and ambitious post-college student dedicated to improving my skills and advancing my career. My primary goal is to enhance myself both professionally and personally. With determination, I tackle challenges head-on until I find effective solutions. I value collaboration and view diverse perspectives as a vital role in problem-solving. As a result, I excel in communication and enjoy working with others, leveraging their insights to achieve results.
-						In addition, I possess a diverse range of soft skills that make me well-suited for the workplace.  My adaptability lets me thrive in dynamic environments and embrace new opportunities and experiences.
-						I’m dedicated to continuous learning and view it as the key to becoming a valuable asset in any professional setting. I’m committed to expanding my knowledge and keeping up with the industry. By seeking out new experiences, meeting new people, and learning from their expertise, I’m learning and honing my skills.
-						Ultimately, my goal is to leverage my passion for growth and my unique set of skills to contribute meaningfully to an organisation and make a lasting impact. I’m excited about the opportunities ahead and eager to embark on this journey of self-improvement and professional development.
-						</p>
-					</div>
-				</div>
-			</section>
-			<!--portfolio-->
-			<section class="S3">
-				<div class="PC1">
-					<h1>Portfolio</h1>
-				</div>
-				<div class="PP1">
-					<div class="PC2">
-						<h1>Technical</h1>
-					</div>
-					<div class="PC3">
-						<h1>Creative</h1>
-					</div>
-				</div>
-				<div class="PP2">
-					<div class="PC4">
-						<h1>technical content</h1>
-					</div>
-					<div class="PC5">
-						<h1>creative content</h1>
-					</div>
-				</div>
-			</section>
-			<!--contact-->
-			<section class="S4">
-				<div class="CC1">
-					<h1>Contact</h1>
-				</div>
-				<div class="CP1">
-					<div class="CC2">
-						<h1>phone number</h1>
-					</div>
-					<div class="CC3">
-						<h1>email</h1>
-					</div>
-					<div class="CC4">
-						<h1>general location</h1>
-					</div>
-				</div>
-			</section>
+		<!--nav bar-->
+		<div class="Nav">
+			<object data="Icon.svg" width="45px" height="45px"> </object>
+  				<!-- Navigation links (hidden by default) -->
+  				<div class="Links" id="Links">
+    				<a href="#About">About</a>
+    				<a href="#Portfolio">Portfolio</a>
+    				<a href="#Contact">Contact</a>
+  				</div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  				 <object data="HamburgerIcon.svg" width="45px" height="45px"><a href="javascript:void(0);" class="icon" onclick="myFunction()"></a></object> 
+  		</div>
+  		<div class="TopBar">
+  			<object data="Icon.svg" width="45px" height="45px"> </object>
+  			<object data="HamburgerIcon.svg" width="45px" height="45px"> </object>
+  		</div>
+
+  		<!--home page-->
+		<div class="Hero">
+			<h1 id="Home" alt="heroPage">Jack Quigley</h1>
+		</div>
+		<div class="Sub">
+			<p>Creative Problem Solver</p>
+		</div>
+		<div class="Buttons">
+			<a href="#">Download my CV</a>
+			<a href="#Contact">Let's Get In Touch</a>
 		</div>
 
-		<!--
-		<div class="Header">
-			<h1>Jack Quigley</h1>
-			<a href="C:\Users\jackq\Downloads\JackQuigleyCV.docx" download>Download CV</a>
-		</div> -->
-		<!-- navigation bar 
-		<nav>
-			<div class="Topnav">
-				<a href="#home">Home</a>
-				<a href="#about">About</a>
-				<a href="#portfolio">Portfolio</a>
-				<a href="#contact">Contact</a>
-			</div>
-		</nav>
-		-->
+		<!--about page-->
+		<div class="About">
+			<h1 id="About">About Me</h1>
+		</div>
+		<div class="Info">
+			<p>Post-college student  dedicated to improving my skills and advancing my career. My primary goal is to enhance myself both professionally and personally.</p>
+			<p>I seek out new experiences, meet new people and learn from their expertise and insight, honing my skills and knowledge more and more.</p>
+		</div>
+		<!--portfolio page-->
+		<div class="Portfolio">
+			<h1 id="Portfolio">Portfolio</h1>
+		</div>
+		<div class="Tech">
+			<h2>Technical</h2>
+		</div>
+		<div class="TechScroll">
+			<div class="card"><h2>HTML</h2></div>
+  			<div class="card"><h2>CSS</h2></div>
+  			<div class="card"><h2>JS</h2></div>
+  			<div class="card"><h2>Card</h2></div>
+  			<div class="card"><h2>Card</h2></div>
+  			<div class="card"><h2>Card</h2></div>
+  			<div class="card"><h2>Card</h2></div>
+  			<div class="card"><h2>Card</h2></div>
+  			<div class="card"><h2>Card</h2></div>
+		</div>
+		<div class="Create">
+			<h2>Creative</h2>
+		</div>
+		<div class="CreateScroll">
+			<div class="card"><h2>Construct3</h2></div>
+  			<div class="card"><h2>Aesprite</h2></div>
+  			<div class="card"><h2>Piano</h2></div>
+  			<div class="card"><h2>Card</h2></div>
+  			<div class="card"><h2>Card</h2></div>
+  			<div class="card"><h2>Card</h2></div>
+  			<div class="card"><h2>Card</h2></div>
+  			<div class="card"><h2>Card</h2></div>
+  			<div class="card"><h2>Card</h2></div>
+		</div>
+
+		<!--contact page-->
+		<div class="Contact">
+			<h1 id="Contact">Let's Chat</h1>
+		</div>
+		<div class="ContactSub">
+			<p>If I’m the guy you’ve been looking for let’s get into contact</p>
+		</div>
+		<div class="DropDown">
+			<p>Phone: 07804 615346</p>
+			<p>Email: jackquigley11@gmail.com</p>
+			<p>Location: Plymouth</p>
+			<p>LinkedIn: link to profile</p>
+		</div>
 	</body>
 </html>
 

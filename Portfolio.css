@@ -3,16 +3,23 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	background-color: ;
+}
+html {
+	font-size: 16px;
 }
 
 											/* applies to the body */
 body {
 	background-color: #0d101b;
+	/*final background colour just add the #*/
+	background-color: B8EAFF;
 }
 
 											/* changing the font of the website */
-body, h1,h2,h3,h4,h5,h6,p {
-	font-family: "Montserrat", sans-serif
+body, h1,h2,h3,h4,h5,h6,p,a {
+	font-family: "Raleway";
+	color: ghostwhite;
 }
 h1,h2,h3,h4,h5,h6,p {
 	background-color: ;
@@ -35,223 +42,150 @@ section h1 {
 	text-shadow: 1px 1px 4px #000;
 }
 
-											/* Home Section */
-.S1 {
-	background-color: #105390;
+/* Navigation Bar Needs to be redone*/
+.Nav {
+  overflow: hidden;
+  background-color: #ff5277;
+  position: relative;
+  /*remove when done*/
+  display: none;
 }
-.S1 header {
-	height: 100vh;
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.Nav #Links {
+  display: none;
+}
+
+/* Style navigation menu links */
+.Nav .Links a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Style the hamburger menu */
+
+
+/* Add a grey background color on mouse-over */
+.Nav a:hover {
+  background-color: #ff5277;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.Active {
+  background-color: #0d101b;
+  color: white;
+  font-size: 2rem;
+}
+
+/*
+rgb(255, 82, 119) pink #ff5277
+rgb(46, 48, 73) dark blue #2e3049
+rgb(196, 196, 213) light gray #c4c4d5
+rgb(107, 111, 152) blue gray #6b6f98
+																						/*topbar section*/
+.TopBar {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	scroll-snap-align: start;
+	justify-content: space-between;
 }
-.S1 h1 {
-	font-size: 150px;
-	font-weight: 700;
-}
-											/* buttons on the home page */
-											/* position: relative; and top bottom left right position the box */
-.Buttonbox {
-	margin: auto;
-	width: 40%;
-	/*border: 3px solid green; */
-	padding: 10px;
+																						/*hero section*/
+.Hero {
+	background-color: dimgray;
+	min-width: 100%;
 	text-align: center;
-	position: relative;
-	bottom: 30vh;
-	display: flex;
-	justify-content: space-evenly;
+	font-size: 2rem;
 }
-.Buttonbox a {
+
+#Home {
+
+}
+
+.Sub {
+	background-color: green;
+	min-width: 100%;
+	text-align: center;
+}
+
+.Buttons {
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: yellow;
+}
+
+.Buttons a {
 	color: ghostwhite;
 	text-decoration: none;
-	background-color: #e21c61;
-	color: white;
-	padding: 14px 25px;
-	text-align: justify;
-	text-decoration: none;
-	display: inline-block;
-	border: 3px solid ghostwhite;
-	border-radius: 4px;
-}
-
-											/* About Section */
-.S2 {
-	background-color: #e21c61;
-}
-											/*about me area customisation*/
-											/*AP - about parent AC - about child*/
-.AP {
-	background-color: gray;
-	width: 100avw;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.AC1, .AC2{
-	text-align: justify;
-	
-}
-.AC1{
-	background-color: black;
-	flex: 1;
-	text-align: center;
-}
-.AC2{
-	background-color: whitesmoke;
-	flex: 4;
-	text-align: justify;
+	background-color: #ff5277;
+	width: 75%;
 	max-width: 1000px;
-	margin: auto;
-	padding: 0% 10% 0% 10%;
 }
 
-											/* Portfolio Section */
-.S3 {
-	background-color: #1b958d;
-}
-											/* parent 1*/
-.PP1{
-	background-color: hotpink;
-	width: 100avw;
-	height: 25vh;
-	display: flex;
-	flex-direction: row;
+																				/*About section*/
+.About {
+	background-color: blueviolet;
 	text-align: center;
-	justify-content: center;
-	align-items: center;
 }
-.PC1{
-	width: 100avw;
-	height: 25vh;
-	background-color: black;
+
+.Info{
+	background-color: orange;
 	text-align: center;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
 }
-.PC2{
-	width: 50vw;
-	height: 25vh;
+
+.Info p {
+	width: 75%;
+}
+
+																			/*portfolio section*/
+.Portfolio {
+	background-color: darkred;
+	text-align: center;
+}
+.Tech {
+	background-color: purple;
+	text-align: center;
+}
+.TechScroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.Create {
 	background-color: blue;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.PC3{
-	width: 50vw;
-	height: 25vh;
-	background-color: gray;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-											/* parent 2*/
-.PP2{
-	background-color: black;
-	width: 100avw;
-	height: 50vh;
-	display: flex;
 	text-align: center;
-	justify-content: center;
-	align-items: center;
 }
-.PC4{
-	width: 50vw;
-	height: 50vh;
-	background-color: yellow;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.PC5{
-	width: 50vw;
-	height: 50vh;
-	background-color: green;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.CreateScroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
-
-											/* Contact Section */
-.S4 {
-	background-color: #fea85f;
+.card {
+	flex: 0 0 auto;
 }
 
-.CC1 {
-	width: 100avw;
-	height: 25vh;
-	background-color: black;
+																/*Contact section*/
+.Contact {
+	background-color: crimson;
+	text-align: center;
+}
+.ContactSub {
 	text-align: center;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
 }
-.CP1{
-	background-color: hotpink;
-	width: 100avw;
-	height: 75vh;
-	display: flex;
-	flex-direction: row;
+.ContactSub p {
+	width: 75%;
+}
+.DropDown {
+	background-color: darkseagreen;
 	text-align: center;
-	justify-content: center;
-	justify-content: space-evenly;
-	align-items: center;
 }
-.CC2, .CC3, .CC4{
-	width: 25vw;
-	height: 25vh;
-	background-color: green;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.CC2{
-
-}
-.CC3{
-
-}
-.CC4{
-
-}
-/* top navigation customisation 
-.topnav {
-    position: sticky;
-    top: 0;
-    background-color: #ee243d;
-    padding: 10px 0px 10px 0px;
-    color: white;
-    margin: 0 auto;
-    overflow: hidden;
-}
-/* links customisation 
-.topnav a {
-	float:left;
-	color: #0d101b;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-}
-/* links effect when hovering 
-.topnav a:hover {
-	background-color: #ddd;
-	color: black;
-}
-
-/* colours used
-#381631 dark purple
-#e21c61 pinkish red
-#e26159 tango orange
-#fea85f bumblebee
-#d8dcb4 gray
-#5eb6ad faded torgouise
-#1b958d torqouise
-#105390 blue
-ghostwhite
-*/
