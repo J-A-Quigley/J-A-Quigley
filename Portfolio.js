@@ -7,3 +7,10 @@ function myFunction() {
     x.style.display = "flex";
   }
 }
+
+document.getElementById("target-me").open = true;
+
+const details = document.querySelector("details");
+details.setAttribute("open", "");
+
+/*id="target-me"*/
