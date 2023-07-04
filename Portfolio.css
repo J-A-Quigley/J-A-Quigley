@@ -171,7 +171,7 @@ rgb(107, 111, 152) blue gray #6b6f98
 .Info .ProfilePic {
 		width: 60%;
 }
-.Info p {
+.Info .InfoText {
 	width: 75%;
 	padding: 1rem 0rem 0rem 0rem;
 
@@ -183,22 +183,24 @@ rgb(107, 111, 152) blue gray #6b6f98
 	text-align: center;
 	padding: 1rem 1rem 1rem 1rem;
 }
+																			/*everything except create scroll disabled*/
 .Tech {
 	ackground-color: purple;
-	text-align: center;
-	padding: 1rem 1rem 1rem 1rem;
+	text-align: left;
+	padding: 1rem 1rem 1rem 3rem;
 }
 .TechScroll {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  padding: 1rem 1rem 1rem 1rem;
-  align-items: center;
+		/*to return techscroll change display to flex*/
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	padding: 1rem 1rem 1rem 1rem;
+	align-items: center;
 }
 .Create {
 	ackground-color: blue;
-	text-align: center;
-	padding: 1rem 1rem 1rem 1rem;
+	text-align: left;
+	padding: 1rem 1rem 1rem 3rem;
 }
 .CreateScroll {
   display: flex;
@@ -266,11 +268,441 @@ rgb(107, 111, 152) blue gray #6b6f98
 
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
-/* Small devices (portrait tablets and large phones, 600px and up) */
+																																/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.Nav {
+  	overflow: hidden;
+  	position: relative;
+  	display: flex;
+  	justify-content: space-between;
+  	padding: 1rem 1rem 1rem 1rem;
+  	min-width: 100%;
+	}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+
+	.TopBar {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+	}
+	/* Style navigation menu links */
+	.TopBar #Links {
+		display: none;
+		margin: 0 auto;
+	}
+	.TopBar .Links {
+	  flex-direction: column;
+	  align-items: center;
+		text-align: center;
+	}
+	.TopBar .Links a {
+	  color: white;
+	  padding: 1rem 1rem 1rem 1rem;
+	}
+
+	/* Style the hamburger menu */
+
+
+	/* Add a grey background color on mouse-over */
+	.TopBar a:hover {
+	  background-color: #1AA1DB;
+	  color: black;
+	}
+
+	/* Style the active link (or home/logo) */
+	.Active {
+	  background-color: #1AA1DB;
+	  color: white;
+	  font-size: 2rem;
+	}
+
+	/*
+	rgb(255, 82, 119) pink #ff5277
+	rgb(46, 48, 73) dark blue #2e3049
+	rgb(196, 196, 213) light gray #c4c4d5
+	rgb(107, 111, 152) blue gray #6b6f98
+																							/*topbar section*/
+	.TopBar {
+		display: flex;
+		justify-content: space-between;
+	}
+																							/*hero section*/
+	.Hero {
+		ackground-color: dimgray;
+		max-width: 100%;
+		text-align: center;
+		font-size: 2rem;
+		padding: 0rem 1rem 1rem 1rem;
+
+	}
+
+	#Home {
+
+	}
+
+	.Sub {
+		ackground-color: green;
+		min-width: 100%;
+		text-align: center;
+	  padding: 0rem 1rem 1rem 1rem;
+
+	}
+
+	.Buttons {
+		font-size: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		ackground-color: yellow;
+	}
+
+	.Buttons a {
+		color: ghostwhite;
+		text-decoration: none;
+		background-color: #1AA1DB;
+		width: 75%;
+		max-width: 1000px;
+		padding: 1rem 1rem 1rem 1rem;
+		margin: 1rem 1rem 1rem 1rem;
+
+
+	}
+	.Geo {
+		display: none;
+	}
+
+																					/*About section*/
+	.About {
+		ackground-color: blueviolet;
+		text-align: center;
+		padding: 1rem 1rem 0rem 1rem;
+	}
+
+	.Info{
+		ackground-color: orange;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem 1rem 1rem 1rem;
+	}
+
+	.Info .ProfilePic {
+			width: 60%;
+	}
+	.Info .InfoText {
+		width: 75%;
+		padding: 1rem 0rem 0rem 0rem;
+
+	}
+
+																				/*portfolio section*/
+	.Portfolio {
+		ackground-color: darkred;
+		text-align: center;
+		padding: 1rem 1rem 1rem 1rem;
+	}
+																				/*everything except create scroll disabled*/
+	.Tech {
+		ackground-color: purple;
+		text-align: left;
+		padding: 1rem 1rem 1rem 3rem;
+	}
+	.TechScroll {
+			/*to return techscroll change display to flex*/
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		padding: 1rem 1rem 1rem 1rem;
+		align-items: center;
+	}
+	.Create {
+		ackground-color: blue;
+		text-align: left;
+		padding: 1rem 1rem 1rem 3rem;
+	}
+	.CreateScroll {
+	  display: flex;
+	  flex-wrap: nowrap;
+	  overflow-x: auto;
+	  padding: 1rem 1rem 1rem 1rem;
+	}
+
+	.card {
+		flex: 0 0 auto;
+		padding: 0rem 1rem 0rem 1rem;
+	}
+
+																	/*Contact section*/
+	.Contact {
+		ackground-color: crimson;
+		text-align: center;
+		padding: 1rem 1rem 1rem 1rem;
+	}
+	.ContactSub {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0rem 1rem 1rem 1rem;
+	}
+	.ContactSub p {
+		width: 75%;
+	}
+	.DropDown {
+		ackground-color: darkseagreen;
+		text-align: left;
+		padding: 0rem 1rem 1rem 1rem
+	}
+	.DropDown details{
+		ackground-color: darkseagreen;
+		text-align: left;
+		margin: 1rem 1rem 1rem 1rem;		
+		font-size: 1.5rem;
+	  background-color: #1AA1DB;
+	}
+	.DropDown summary{
+		ackground-color: darkseagreen;
+		text-align: left;
+		margin: 0rem 1rem 0rem 1rem;		
+		font-size: 1.5rem;
+	  background-color: #1AA1DB;
+	}
+	.DropDown p{
+		ackground-color: darkseagreen;
+		text-align: left;
+		padding: 1rem 1rem 1rem 1rem;		
+		font-size: 1rem;
+	  background-color: #1AA1DB;
+	  word-wrap: break-word;
+	  width: 100%;
+	}
+
+}
+
+																												/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 	.Nav {
+  	overflow: hidden;
+  	position: relative;
+  	display: flex;
+  	justify-content: space-between;
+  	padding: 1rem 1rem 1rem 1rem;
+  	min-width: 100%;
+	}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+
+	.TopBar {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+	}
+	/* Style navigation menu links */
+	.TopBar #Links {
+		display: none;
+		margin: 0 auto;
+	}
+	.TopBar .Links {
+	  flex-direction: column;
+	  align-items: center;
+		text-align: center;
+	}
+	.TopBar .Links a {
+	  color: white;
+	  padding: 1rem 1rem 1rem 1rem;
+	}
+
+	/* Style the hamburger menu */
+
+
+	/* Add a grey background color on mouse-over */
+	.TopBar a:hover {
+	  background-color: #1AA1DB;
+	  color: black;
+	}
+
+	/* Style the active link (or home/logo) */
+	.Active {
+	  background-color: #1AA1DB;
+	  color: white;
+	  font-size: 2rem;
+	}
+
+	/*
+	rgb(255, 82, 119) pink #ff5277
+	rgb(46, 48, 73) dark blue #2e3049
+	rgb(196, 196, 213) light gray #c4c4d5
+	rgb(107, 111, 152) blue gray #6b6f98
+																							/*topbar section*/
+	.TopBar {
+		display: flex;
+		justify-content: space-between;
+	}
+																							/*hero section*/
+	.Hero {
+		ackground-color: dimgray;
+		max-width: 100%;
+		text-align: center;
+		font-size: 2rem;
+		padding: 0rem 1rem 1rem 1rem;
+
+	}
+
+	#Home {
+
+	}
+
+	.Sub {
+		ackground-color: green;
+		min-width: 100%;
+		text-align: center;
+	  padding: 0rem 1rem 1rem 1rem;
+
+	}
+
+	.Buttons {
+		font-size: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		ackground-color: yellow;
+	}
+
+	.Buttons a {
+		color: ghostwhite;
+		text-decoration: none;
+		background-color: #1AA1DB;
+		width: 75%;
+		max-width: 1000px;
+		padding: 1rem 1rem 1rem 1rem;
+		margin: 1rem 1rem 1rem 1rem;
+
+
+	}
+	.Geo {
+		display: none;
+	}
+
+																					/*About section*/
+	.About {
+		ackground-color: blueviolet;
+		text-align: center;
+		padding: 1rem 1rem 0rem 1rem;
+	}
+
+	.Info{
+		ackground-color: orange;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem 1rem 1rem 1rem;
+	}
+
+	.Info .ProfilePic {
+			width: 60%;
+	}
+	.Info .InfoText {
+		width: 75%;
+		padding: 1rem 0rem 0rem 0rem;
+
+	}
+
+																				/*portfolio section*/
+	.Portfolio {
+		ackground-color: darkred;
+		text-align: center;
+		padding: 1rem 1rem 1rem 1rem;
+	}
+																				/*everything except create scroll disabled*/
+	.Tech {
+		ackground-color: purple;
+		text-align: left;
+		padding: 1rem 1rem 1rem 3rem;
+	}
+	.TechScroll {
+			/*to return techscroll change display to flex*/
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		padding: 1rem 1rem 1rem 1rem;
+		align-items: center;
+	}
+	.Create {
+		ackground-color: blue;
+		text-align: left;
+		padding: 1rem 1rem 1rem 3rem;
+	}
+	.CreateScroll {
+	  display: flex;
+	  flex-wrap: nowrap;
+	  overflow-x: auto;
+	  padding: 1rem 1rem 1rem 1rem;
+	}
+
+	.card {
+		flex: 0 0 auto;
+		padding: 0rem 1rem 0rem 1rem;
+	}
+
+																	/*Contact section*/
+	.Contact {
+		ackground-color: crimson;
+		text-align: center;
+		padding: 1rem 1rem 1rem 1rem;
+	}
+	.ContactSub {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0rem 1rem 1rem 1rem;
+	}
+	.ContactSub p {
+		width: 75%;
+	}
+	.DropDown {
+		ackground-color: darkseagreen;
+		text-align: left;
+		padding: 0rem 1rem 1rem 1rem
+	}
+	.DropDown details{
+		ackground-color: darkseagreen;
+		text-align: left;
+		margin: 1rem 1rem 1rem 1rem;		
+		font-size: 1.5rem;
+	  background-color: #1AA1DB;
+	}
+	.DropDown summary{
+		ackground-color: darkseagreen;
+		text-align: left;
+		margin: 0rem 1rem 0rem 1rem;		
+		font-size: 1.5rem;
+	  background-color: #1AA1DB;
+	}
+	.DropDown p{
+		ackground-color: darkseagreen;
+		text-align: left;
+		padding: 1rem 1rem 1rem 1rem;		
+		font-size: 1rem;
+	  background-color: #1AA1DB;
+	  word-wrap: break-word;
+	  width: 100%;
+	}
+
+}
+
+																																	/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+		.Nav {
 		display: none;
 	}
 	.TopBar {
@@ -284,9 +716,19 @@ rgb(107, 111, 152) blue gray #6b6f98
 		flex-direction: row;
 		width: 100%;
 	}
+	.TopBar .Links {
+	  flex-direction: column;
+	  align-items: center;
+		text-align: center;
+	}
+	.TopBar .Links a {
+	  color: white;
+	  padding: 1rem 1rem 1rem 1rem;
+	  font-size: 1.5rem;
+	}
 	.Hero {
 		ackground-color: dimgray;
-		max-width: 50%;
+		max-width: 100%;
 		text-align: left;
 		font-size: 4rem;
 		padding: 6rem 1rem 1rem 3rem;
@@ -294,7 +736,7 @@ rgb(107, 111, 152) blue gray #6b6f98
 	}
 
 	#Home {
-
+		max-width: 50%;
 	}
 
 	.Sub {
@@ -342,28 +784,35 @@ rgb(107, 111, 152) blue gray #6b6f98
 	}
 
 	.Info{
-		ackground-color: orange;
+		/*ackground-color: orange;
 		text-align: left;
+		isplay: flex;
+		lex-direction: column-reverse;
+		lign-items: flex-start;*/
 		display: flex;
-		flex-direction: column-reverse;
-		align-items: flex-start;
-		padding: 1rem 1rem 1rem 3rem;
-		width: 50%;
+		flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+		/*padding: 1rem 1rem 1rem 3rem;
+		idth: 100%;*/
 		font-size: 2rem;
 	}
 
 	.Info .ProfilePic {
 		eight: 10%;
 		max-width: 25%;
-		position: absolute;
+		osition: absolute;
 		op: 0px;
-		right: 10%;
+		ight: 10%;
+		float: left;
 	}
 
-	.Info p {
-		width: 100%;
+	.Info .InfoText {
+		width: 50%;
 		padding: 1rem 0rem 0rem 0rem;
-		direction: ltr;
+		irection: ltr;
+		float: left;
+		text-align: left;
 	}
 
 																			/*portfolio section*/
@@ -373,6 +822,7 @@ rgb(107, 111, 152) blue gray #6b6f98
 		padding: 12rem 1rem 1rem 3rem;
 		font-size: 2.5rem;
 	}
+																			/*everything except create scroll disabled*/
 	.Tech {
 		ackground-color: purple;
 		text-align: left;
@@ -392,14 +842,13 @@ rgb(107, 111, 152) blue gray #6b6f98
 	}
 	.CreateScroll {
 	  display: flex;
-	  flex-wrap: nowrap;
-	  overflow-x: auto;
+	  flex-wrap: wrap;
 	  padding: 1rem 1rem 1rem 1rem;
 	}
 
 	.card {
 		flex: 0 0 auto;
-		padding: 0rem 1rem 0rem 1rem;
+		padding: 1rem 1rem 1rem 1rem;
 	}
 
 																	/*Contact section*/
@@ -426,6 +875,7 @@ rgb(107, 111, 152) blue gray #6b6f98
 		padding: 0rem 1rem 1rem 2rem;
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 	.DropDown details{
 		ackground-color: darkseagreen;
@@ -452,8 +902,6 @@ rgb(107, 111, 152) blue gray #6b6f98
 	  word-wrap: break-word;
 	}
 }
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {...}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
