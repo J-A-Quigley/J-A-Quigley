@@ -259,6 +259,14 @@ rgb(107, 111, 152) blue gray #6b6f98
   width: 100%;
 }
 
+.ContactInfo {
+	display: none;
+}
+.ContactCard {
+
+}
+.ContactIcons {
+}
 
 
 
@@ -873,7 +881,7 @@ rgb(107, 111, 152) blue gray #6b6f98
 		ackground-color: darkseagreen;
 		text-align: left;
 		padding: 0rem 1rem 1rem 2rem;
-		display: flex;
+		display: none;
 		justify-content: space-between;
 		flex-wrap: wrap;
 	}
@@ -900,6 +908,52 @@ rgb(107, 111, 152) blue gray #6b6f98
 		font-size: 1rem;
 	  background-color: #1AA1DB;
 	  word-wrap: break-word;
+	}
+	.ContactInfo {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		ustify-content: center;
+		padding: 1rem 1rem 1rem 1rem;	
+		flex-wrap: wrap;
+	}
+	.ContactCard {
+		background: #1AA1DB;
+		padding: 0rem 1rem 0rem 1rem;
+		margin: 1rem 1rem 1rem 1rem;
+		min-width: calc(20%);
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		word-wrap: break-word;
+		
+	}
+	.ContactIcons {
+		font-size: 2rem;
+		background-color: #0d101b;
+		width: 60px;
+		height: 60px;
+		text-align: center;
+		line-height: 60px !important;
+		border-radius: 50%;
+		transition: 0.3s linear;
+	}
+	.ContactCard:hover .ContactIcons{
+		background: none;
+		color: #0d101b;
+		transform: scale(1.6);
+	}
+	.ContactCard p,a {
+		opacity: 0;
+		transition: 0.3s linear;
+		white-space: normal;
+	}
+	.ContactCard:hover p,a {
+		opacity: 1;
+		padding: 1rem 0rem 0rem 0rem;
+
 	}
 }
 /* Large devices (laptops/desktops, 992px and up) */
