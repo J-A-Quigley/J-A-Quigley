@@ -1,10 +1,18 @@
+/*Made By Jack Alexander Quigley*/
 											/*BACKGROUND COLOUR HAS HAD THE "b" removed*/
+											/* main things to add to my own portfolio from the others created: 
+											DONE better layout from seans
+											DONE word-break break-word on all text so that when text is too large for screen it will shrink 
+											DONE adding a border to my portfolio area
+											DONE taking all of the top/nav bar html and CSS
+											DONE taking the contact boxes and make them columns for smaller devices
+											add the clickable images function from davids (find a better way to do it that doesn't require a new function for every item)*/
 											/* applies to everything */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: ;
+	word-break: break-word;
 }
 html {
 	font-size: 16px;
@@ -64,6 +72,16 @@ section h1 {
 	align-items: center;
 	text-align: center;
 	width: 100%;
+}
+.TopBar .Icon {
+  background-color: #034694;
+  display: none;
+  min-width: 2rem;
+  min-height: 2rem;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
 }
 /* Style navigation menu links */
 .TopBar #Links {
@@ -184,29 +202,20 @@ rgb(107, 111, 152) blue gray #6b6f98
 	padding: 1rem 1rem 1rem 1rem;
 }
 																			/*everything except create scroll disabled*/
-.Tech {
-	ackground-color: purple;
-	text-align: left;
-	padding: 1rem 1rem 1rem 3rem;
-}
-.TechScroll {
-		/*to return techscroll change display to flex*/
-	display: flex;
-	flex-wrap: nowrap;
-	overflow-x: auto;
-	padding: 1rem 1rem 1rem 1rem;
-	align-items: center;
-}
-.Create {
-	ackground-color: blue;
-	text-align: left;
-	padding: 1rem 1rem 1rem 3rem;
-}
+
+
 .CreateScroll {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  border-style: solid;
+  border-color: #1AA1DB;
+  border-radius: 7px;
+  margin: 1rem 1rem 1rem 1rem;
+  background-color: #FFFFFF;
+  border-width: 0.2rem;
 }
 
 .card {
@@ -233,42 +242,83 @@ rgb(107, 111, 152) blue gray #6b6f98
 .DropDown {
 	ackground-color: darkseagreen;
 	text-align: left;
-	padding: 0rem 1rem 1rem 1rem
+	padding: 0rem 1rem 1rem 1rem;
+	display: none;
 }
 .DropDown details{
 	ackground-color: darkseagreen;
 	text-align: left;
 	margin: 1rem 1rem 1rem 1rem;		
 	font-size: 1.5rem;
-  background-color: #1AA1DB;
+  background-color: #DBA111;
 }
 .DropDown summary{
 	ackground-color: darkseagreen;
 	text-align: left;
 	margin: 0rem 1rem 0rem 1rem;		
 	font-size: 1.5rem;
-  background-color: #1AA1DB;
+  background-color: #DBA111;
 }
 .DropDown p{
 	ackground-color: darkseagreen;
 	text-align: left;
 	padding: 1rem 1rem 1rem 1rem;		
 	font-size: 1rem;
-  background-color: #1AA1DB;
+  background-color: #DBA111;
   word-wrap: break-word;
   width: 100%;
 }
 
 .ContactInfo {
-	display: none;
+	display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 1rem 1rem 1rem 1rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center
 }
 .ContactCard {
-
+	background: #1AA1DB;
+  padding: 0rem 1rem 0rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
+  min-width: calc(100%);  
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+  border-style: solid;
+  border-color: #1AA1DB;
+  border-radius: 0.2rem;
+	
 }
 .ContactIcons {
+	font-size: 2rem;
+	background-color: #0d101b;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px !important;
+	border-radius: 50%;
+	transition: 0.3s linear;
 }
+.ContactCard:hover .ContactIcons{
+	background: none;
+	color: #0d101b;
+	transform: scale(1.6);
+}
+.ContactCard p,a {
+	opacity: 0;
+	transition: 0.3s linear;
+	white-space: normal;
+}
+.ContactCard:hover p,a {
+	opacity: 1;
+	padding: 1rem 0rem 0rem 0rem;
 
-
+}
 
 /*different size browser area*/
 
@@ -287,6 +337,16 @@ rgb(107, 111, 152) blue gray #6b6f98
   	min-width: 100%;
 	}
 
+	.Nav .Icon {
+    background-color: #034694;
+    display: flex;
+    min-width: 2rem;
+    min-height: 2rem;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2rem;
+  }
 /* Hide the links inside the navigation menu (except for logo/home) */
 
 
@@ -433,13 +493,13 @@ rgb(107, 111, 152) blue gray #6b6f98
 		text-align: left;
 		padding: 1rem 1rem 1rem 3rem;
 	}
-	.CreateScroll {
+	/*.CreateScroll {
 	  display: flex;
 	  flex-wrap: nowrap;
 	  overflow-x: auto;
 	  padding: 1rem 1rem 1rem 1rem;
 	}
-
+*/
 	.card {
 		flex: 0 0 auto;
 		padding: 0rem 1rem 0rem 1rem;
@@ -502,6 +562,16 @@ rgb(107, 111, 152) blue gray #6b6f98
   	padding: 1rem 1rem 1rem 1rem;
   	min-width: 100%;
 	}
+	.Nav .Icon {
+    background-color: #034694;
+    display: flex;
+    min-width: 2rem;
+    min-height: 2rem;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2rem;
+  }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 
@@ -631,31 +701,14 @@ rgb(107, 111, 152) blue gray #6b6f98
 		padding: 1rem 1rem 1rem 1rem;
 	}
 																				/*everything except create scroll disabled*/
-	.Tech {
-		ackground-color: purple;
-		text-align: left;
-		padding: 1rem 1rem 1rem 3rem;
-	}
-	.TechScroll {
-			/*to return techscroll change display to flex*/
-		display: flex;
-		flex-wrap: nowrap;
-		overflow-x: auto;
-		padding: 1rem 1rem 1rem 1rem;
-		align-items: center;
-	}
-	.Create {
-		ackground-color: blue;
-		text-align: left;
-		padding: 1rem 1rem 1rem 3rem;
-	}
+/*
 	.CreateScroll {
 	  display: flex;
 	  flex-wrap: nowrap;
 	  overflow-x: auto;
 	  padding: 1rem 1rem 1rem 1rem;
 	}
-
+*/
 	.card {
 		flex: 0 0 auto;
 		padding: 0rem 1rem 0rem 1rem;
@@ -717,7 +770,11 @@ rgb(107, 111, 152) blue gray #6b6f98
 		display: flex;
 		text-align: left;
 		align-items: flex-start;
-		padding: 0rem 0rem 0rem 3rem;
+		position: sticky;
+  	top: 0;
+	}
+	.TopBar .Icon{
+		display: flex;
 	}
 	.TopBar #Links {
 		display: flex;
@@ -745,6 +802,8 @@ rgb(107, 111, 152) blue gray #6b6f98
 
 	#Home {
 		max-width: 50%;
+		word-break: initial;
+		text-shadow: -3px 3px #034694;
 	}
 
 	.Sub {
@@ -787,40 +846,36 @@ rgb(107, 111, 152) blue gray #6b6f98
 	.About {
 		ackground-color: blueviolet;
 		text-align: left;
-		padding: 12rem 1rem 0rem 3rem;
+		padding: 12rem 1rem 1rem 3rem;
 		font-size: 2.5rem;
 	}
 
 	.Info{
-		/*ackground-color: orange;
-		text-align: left;
-		isplay: flex;
-		lex-direction: column-reverse;
-		lign-items: flex-start;*/
 		display: flex;
-		flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-		/*padding: 1rem 1rem 1rem 3rem;
-		idth: 100%;*/
-		font-size: 2rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0rem 0rem 0rem 3rem;
+    max-height: 26rem;
+    margin: 2rem 0rem 0rem 0rem;
 	}
 
 	.Info .ProfilePic {
-		eight: 10%;
-		max-width: 25%;
-		osition: absolute;
-		op: 0px;
-		ight: 10%;
-		float: left;
+		max-width: inherit;
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+    max-height: inherit;
+    margin: auto;
 	}
 
 	.Info .InfoText {
 		width: 50%;
 		padding: 1rem 0rem 0rem 0rem;
-		irection: ltr;
 		float: left;
 		text-align: left;
+		font-size: 1.7rem;
+		margin: auto;
 	}
 
 																			/*portfolio section*/
@@ -831,29 +886,11 @@ rgb(107, 111, 152) blue gray #6b6f98
 		font-size: 2.5rem;
 	}
 																			/*everything except create scroll disabled*/
-	.Tech {
-		ackground-color: purple;
-		text-align: left;
-		padding: 1rem 1rem 1rem 3rem;
-	}
-	.TechScroll {
-	  display: flex;
-	  flex-wrap: nowrap;
-	  overflow-x: auto;
-	  padding: 1rem 1rem 1rem 1rem;
-	  align-items: center;
-	}
-	.Create {
-		ackground-color: blue;
-		text-align: left;
-		padding: 1rem 1rem 1rem 3rem;
-	}
-	.CreateScroll {
-	  display: flex;
-	  flex-wrap: wrap;
-	  padding: 1rem 1rem 1rem 1rem;
-	}
 
+	.CreateScroll {
+	  margin: 1rem 1rem 1rem 3rem;
+	}
+*/
 	.card {
 		flex: 0 0 auto;
 		padding: 1rem 1rem 1rem 1rem;
@@ -911,11 +948,12 @@ rgb(107, 111, 152) blue gray #6b6f98
 	}
 	.ContactInfo {
 		display: flex;
-		width: 100%;
-		align-items: center;
-		ustify-content: center;
-		padding: 1rem 1rem 1rem 1rem;	
-		flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 1rem 1rem 1rem;
+    flex-wrap: wrap;
+    flex-direction: row;
 	}
 	.ContactCard {
 		background: #1AA1DB;
